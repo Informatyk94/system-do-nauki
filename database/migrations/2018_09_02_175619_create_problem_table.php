@@ -16,6 +16,7 @@ class CreateProblemTable extends Migration
         Schema::create('problem_table', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->string('category');
             $table->string('content_problem');
             $table->string('content_solution');
             $table->timestamp('created_at')->nullable();
