@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/list', 'PagesController@list');
+Route::get('/panel', 'PanelController@panel');

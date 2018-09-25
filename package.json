@@ -12,12 +12,18 @@
     "devDependencies": {
         "axios": "^0.18",
         "bootstrap": "^4.0.0",
+        "browser-sync": "^2.24.7",
         "cross-env": "^5.1",
         "gulp": "^3.9.1",
+        "gulp-sass": "^4.0.1",
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
         "popper.js": "^1.12",
+        "run-sequence": "^2.2.1",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "gulp-cli": "^2.0.1"
     }
 }
