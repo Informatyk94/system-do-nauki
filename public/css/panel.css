@@ -1,0 +1,5 @@
+.center_img {
+  text-align: center !important;
+  padding-top: 25px; }
+  .center_img img {
+    max-width: 200px; }

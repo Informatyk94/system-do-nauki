@@ -10,11 +10,12 @@ html, body {
 
 body {
   color: #212121;
-  background-color: #E9EAED; }
+  background-color: #E6E6E6;
+  font-family: 'Hammersmith One', sans-serif; }
 
 .site-content {
   margin-top: 30px;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
 
 .btn-primary,
 .btn-primary:hover,
@@ -204,4 +205,6 @@ a, .btn-link {
   margin: 0; }
 
 .title {
-  text-align: center; }
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 35px; }
