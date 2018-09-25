@@ -6,9 +6,9 @@ var runSequence = require('run-sequence');
 
 //Definicja tasków
 gulp.task('sass', () => {
-    return gulp.src('app/sass/**/*.scss')
+    return gulp.src('resources/assets/sass/**/*.scss')
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('public/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -16,7 +16,7 @@ gulp.task('sass', () => {
 
 //Definicja tasków
 gulp.task('watch', ['browserSync', 'sass'], () => {
-    gulp.watch('app/sass/**/*.scss', ['sass']);
+    gulp.watch('resources/assets/sass/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
