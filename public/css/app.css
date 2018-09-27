@@ -212,6 +212,14 @@ a, .btn-link {
 .static-page-content h3 {
   margin: 0; }
 
+.top-menu {
+  float: right;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px; }
+  .top-menu .button_menu {
+    margin-right: 15px; }
+
 .title {
   text-align: center;
   padding-top: 23px;
@@ -224,11 +232,3 @@ a, .btn-link {
   padding-top: 25px; }
   .center_img img {
     max-width: 200px; }
-
-.top-menu {
-  float: right;
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px; }
-  .top-menu .button_menu {
-    margin-right: 15px; }
