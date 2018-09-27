@@ -27,42 +27,13 @@
     </style>
 </head>
 <body id="app-layout">
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
 
-            <!-- Collapsed Hamburger -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <!-- Branding Image -->
-            <a class="navbar-brand" href="#">
-                System-B
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- Left Side Of Navbar -->
-            {{--<ul class="nav navbar-nav">--}}
-                {{--<li><a href="">Home </a></li>--}}
-                {{--<li><a href="articles.html">Filmy</a></li>--}}
-                {{--<li><a href="contact.html">Kontakt</a></li>--}}
-                {{--<li><a href="about.html">O nas</a></li>--}}
-            {{--</ul>--}}
-
-            <!-- Right Side Of Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- Authentication Links -->
-                <li><a href="login.html">Zaloguj</a></li>
-                <li><a href="">Rejestracja</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<!- top menu -->
+<div class="top-menu">
+    <a href="#" class="btn btn-danger button_menu" role="button">User</a>
+    <a href="#" class="btn btn-danger button_menu" role="button">Logout</a>
+</div>
+<div style="clear:both"></div>
 
 <!-- wrapper -->
 <div class="site-wrappper">
