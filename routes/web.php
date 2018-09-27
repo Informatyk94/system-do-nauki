@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::get('/panel', 'PanelController@panel');
+Route::get('/addproblem', 'AddProblemController@addproblem');
