@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/panel', 'PanelController@panel');
 Route::get('/addproblem', 'AddProblemController@addproblem');
 Route::get('/research', 'ResearchController@research');
+Route::get('/show/{id}', 'ResearchController@show');

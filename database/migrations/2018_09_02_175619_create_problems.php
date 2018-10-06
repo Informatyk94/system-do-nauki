@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProblemTable extends Migration
+class CreateProblems extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateProblemTable extends Migration
      */
     public function up()
     {
-        Schema::create('problem_table', function (Blueprint $table) {
+        Schema::create('problems', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('category');
+            $table->integer('category');
             $table->string('content_problem');
             $table->string('content_solution');
             $table->timestamp('created_at')->nullable();
@@ -30,6 +30,6 @@ class CreateProblemTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('problem_table');
+        Schema::dropIfExists('problems');
     }
 }

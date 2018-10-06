@@ -20,24 +20,20 @@
 
                 </thead>
                 <tbody>
-                <tr >
-                    <td>1</td>
-                    <td>css</td>
-                    <td>stylowanie</td>
-                    <td>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>php</td>
-                    <td>stylowanie</td>
-                    <td>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>komendy</td>
-                    <td>stylowanie</td>
-                    <td>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</td>
-                </tr>
+
+                    @foreach($problems as $problem)
+
+                    <tr onclick="document.location='/show/{{$problem->id}}'" style="cursor:pointer">
+
+                            <td>{{$problem->id}}</td>
+                            <td>{{$problem->title}}</td>
+                            <td>{{$problem->category}}</td>
+                            <td>{{$problem->content_problem}}</td>
+
+                    </tr>
+
+                    @endforeach
+
                 </tbody>
             </table>
         </div>

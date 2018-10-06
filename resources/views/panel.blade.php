@@ -1,6 +1,5 @@
 @extends('master')
     @section('content')
-
     <h1 class="title">SYSTEM B</h1>
     <div class="container">
         <div class="row">
