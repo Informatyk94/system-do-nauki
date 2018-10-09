@@ -15,7 +15,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="/css/app.css" rel="stylesheet">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <style>
         body {
@@ -55,7 +55,7 @@
         <p>&copy; System-B 2018</p>
     </div>
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.common.js"></script>
 
 <!-- JavaScripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -73,5 +73,9 @@
         crossorigin="anonymous">
 
 </script>
+
+
+
+
 </body>
 </html>

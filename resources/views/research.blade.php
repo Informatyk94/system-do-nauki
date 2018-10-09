@@ -3,9 +3,9 @@
 
     <h1>Szukaj</h1>
     <br />
-    <form action="/action_page.php">
-        <div class="form-group">
-            <input type="name" class="form-control" id="name">
+    <form id="app" >
+        <div class="form-group search-wrapper">
+            <input type="text" class="form-control" id="name" v-model="search" placeholder="Wyszukaj po tytule..">
         </div>
 
         <div class="container">
@@ -19,25 +19,76 @@
                 </tr>
 
                 </thead>
-                <tbody>
+                <tbody v-for="post in filteredList">
 
-                    @foreach($problems as $problem)
 
-                    <tr onclick="document.location='/show/{{$problem->id}}'" style="cursor:pointer">
-
-                            <td>{{$problem->id}}</td>
-                            <td>{{$problem->title}}</td>
-                            <td>{{$problem->category}}</td>
-                            <td>{{$problem->content_problem}}</td>
-
+                    <tr>
+                            <td>@{{ post.id }}</td>
+                            <td>@{{ post.title }}</td>
+                            <td>@{{ post.category }}</td>
+                            <td>@{{ post.content_problem }}</td>
+                            <td><a v-bind:href="post.link">Link</a></td>
                     </tr>
 
-                    @endforeach
 
-                </tbody>
-            </table>
+
+
+
+
+
+        </tbody>
+        </table>
         </div>
 
 
+        {{--<div class="wrapper">--}}
+            {{--<div class="card" v-for="post in filteredList">--}}
+                {{--<a  target="_self">--}}
+                    {{--<small>posted by: @{{ post.category }}</small>--}}
+                    {{--@{{ post.title }}--}}
+                {{--</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+
+
+
     </form>
+<script>
+    class Post {
+        constructor(id, title, category, content_problem) {
+            this.id = id;
+            this.title = title;
+            this.category = category;
+            this.content_problem = content_problem;
+            this.link = "/show/" + id;
+        }
+    }
+
+    const app = new Vue ({
+        el: '#app',
+        data: {
+            search: '',
+            postList : [
+                @foreach($problems as $problem)
+                    new Post(
+                        '{{$problem->id}}',
+                        '{{$problem->title}}',
+                        '{{$problem->category}}',
+                        '{{$problem->content_problem}}',
+                        '{{$problem->id}}'
+
+                    ),
+                @endforeach
+            ]
+        },
+        computed: {
+            filteredList() {
+                return this.postList.filter(post => {
+                    return post.title.toLowerCase().includes(this.search.toLowerCase())
+                })
+            }
+        }
+    })
+</script>
+
 @stop
