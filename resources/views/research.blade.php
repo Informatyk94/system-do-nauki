@@ -1,6 +1,8 @@
 @extends('master')
 @section('content')
-
+    <a href="/panel">
+        <h1 class="title_research">SYSTEM B</h1>
+    </a>
     <h1>Szukaj</h1>
     <br />
     <form id="app" >

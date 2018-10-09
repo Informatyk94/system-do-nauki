@@ -232,3 +232,26 @@ a, .btn-link {
   padding-top: 25px; }
   .center_img img {
     max-width: 200px; }
+
+a {
+  text-align: center;
+  color: #d90022; }
+
+a:link {
+  text-decoration: none;
+  color: #d90022; }
+
+a:hover {
+  text-decoration: none;
+  color: #d90022; }
+
+a:active {
+  text-decoration: none;
+  color: #d90022; }
+
+.title_research {
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 35px;
+  color: #d90022;
+  font-size: 50px; }
