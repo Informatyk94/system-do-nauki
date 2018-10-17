@@ -28,11 +28,10 @@ class ResearchController extends Controller
         return view('showproblem')->with('problem', $problem);
     }
 
-    //function looking for id category and changing its name
-    public function categoryfind($object){
-        $category = Categores::findOrFail($object->category);
-        $object->category = $category->name;
-        return $object;
-    }
-
+//function looking for id category and changing its name
+public function categoryfind($object){
+    $category = Categores::findOrFail($object->category);
+    $object->category = $category->name;
+    return $object;
+}
 }

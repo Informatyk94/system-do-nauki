@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col center_img">
-                <a href="/addproblem"><img src="/image/add_problem.png"></a>
+                <a href="/addproblemform"><img src="/image/add_problem.png"></a>
             </div>
             <div class="col center_img">
                 <a href="/research"><img src="/image/search.png"></a>

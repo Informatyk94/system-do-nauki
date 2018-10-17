@@ -12,6 +12,7 @@ class Problems extends Model
         'category',
         'content_problem',
         'content_solution',
+        'update_at',
         'created_at'
     ];
 }
