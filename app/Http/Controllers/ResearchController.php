@@ -33,6 +33,6 @@ class ResearchController extends Controller
         $category = Categores::findOrFail($object->category);
         $object->category = $category->name;
         return $object;
-}
+    }
 
 }
