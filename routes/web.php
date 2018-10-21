@@ -15,9 +15,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/addproblem', 'AddProblemController@addproblem');
-Route::get('/panel', 'PanelController@panel');
-Route::get('/research', 'ResearchController@research');
-Route::get('/show/{id}', 'ResearchController@show');
-Route::get('/addproblemform', 'AddProblemController@addproblemform');
 
+Route::group(['middleware' => ['web']], function(){
+    Route::post('/addproblem', 'AddProblemController@addproblem');
+    Route::get('/panel', 'PanelController@panel');
+    Route::get('/research', 'ResearchController@research');
+    Route::get('/show/{id}', 'ResearchController@show');
+    Route::get('/addproblemform', 'AddProblemController@addproblemform');
+});
