@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Problems;
 use App\Categores;
 use \Request;
+use App\Http\Requests\AddProblemRequest;
 use phpDocumentor\Reflection\Types\Array_;
 
 class AddProblemController extends Controller
@@ -24,9 +25,11 @@ class AddProblemController extends Controller
         return view('add_problem')->with('category',$this->categoryfind());
     }
 
-    public function addproblem(){
-        $input = Request::all();
-        Problems::create($input);
+    public function addproblem(AddProblemRequest $request){
+//        $input = Request::all();
+////        Problems::create($input);
+
+        Problems::create($request->all());
         return redirect('panel');
     }
 }
