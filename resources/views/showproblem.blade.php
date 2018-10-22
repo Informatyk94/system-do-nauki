@@ -17,5 +17,8 @@
         {{$problem->created_at}}
     </div>
 
+    <a href="/addproblemform/{{$problem->id}}/edit" class="btn btn-danger button_menu" role="button">Edytuj</a>
+    <a href="/research" class="btn btn-danger button_menu" role="button">Wstecz</a>
+
 
 @stop
