@@ -6,8 +6,8 @@
         @include('form_errors')
 
         {!! Form::open(['url' => '/addproblem', 'class'=>'form-horizontal'])  !!}
-            @include('form')
-            {!! Form::submit('Dodaj',['class' => 'btn btn-danger']) !!}
+            @include('form',['buttonText' => 'Dodaj'])
+
         {!! Form::close() !!}
 
 @stop

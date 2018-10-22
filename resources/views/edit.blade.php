@@ -7,8 +7,8 @@
 
     {!! Form::model($problem, ['method' => 'PATCH','class'=>'form-horizontal',
                     'action'=>['AddProblemController@update', $problem->id]])  !!}
-        @include('form')
-    {!! Form::submit('Edytuj',['class' => 'btn btn-danger']) !!}
+    @include('form',['buttonText' => 'Zaktualizuj'])
+
     {!! Form::close() !!}
 
 @stop
