@@ -3,15 +3,7 @@
     <h1>Dodaj zagadnienie</h1>
     <br />
 
-        @if(count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+        @include('form_errors')
 
         {!! Form::open(['url' => '/addproblem', 'class'=>'form-horizontal'])  !!}
             @include('form')
