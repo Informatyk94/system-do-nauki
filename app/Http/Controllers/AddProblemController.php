@@ -32,4 +32,17 @@ class AddProblemController extends Controller
         Problems::create($request->all());
         return redirect('panel');
     }
+
+    public function edit($id)
+    {
+        $problem = Problems::findOrFail($id);
+        return view('edit')->with('problem', $problem)->with('category', $this->categoryfind());
+    }
+
+    public function update(AddProblemRequest $request, $id)
+    {
+        $problem = Problems::findOrFail($id);
+        $problem->update($request->all());
+        return redirect('research');
+    }
 }

@@ -22,4 +22,9 @@ Route::group(['middleware' => ['web']], function(){
     Route::get('/research', 'ResearchController@research');
     Route::get('/show/{id}', 'ResearchController@show');
     Route::get('/addproblemform', 'AddProblemController@addproblemform');
+    Route::get('/addproblemform/{id}/edit', 'AddProblemController@edit');
+    Route::patch('addproblemform/update/{id}', 'AddProblemController@update');
+    //Na przyszłość pozamieniaj używaj kontroli zasobów ścieżki
+    //Route::resource('problem', 'AddproblemController');
 });
+Route::resource('notes', 'NotesController');
