@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Problems;
 use App\Categores;
+use Illuminate\Support\Facades\Auth;
 use \Request;
 use App\Http\Requests\AddProblemRequest;
 use phpDocumentor\Reflection\Types\Array_;
+
 
 class AddProblemController extends Controller
 {
@@ -22,12 +24,16 @@ class AddProblemController extends Controller
     }
 
     public function addproblemform(){
+        //Sprawdzanie czy jestem zalogowany
+        //return Auth::user();
         return view('add_problem')->with('category',$this->categoryfind());
     }
 
+    /**
+     * @param AddProblemRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function addproblem(AddProblemRequest $request){
-//        $input = Request::all();
-////        Problems::create($input);
 
         Problems::create($request->all());
         return redirect('panel');
