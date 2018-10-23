@@ -26,5 +26,10 @@ Route::group(['middleware' => ['web']], function(){
     Route::patch('addproblemform/update/{id}', 'AddProblemController@update');
     //Na przyszłość pozamieniaj używaj kontroli zasobów ścieżki
     //Route::resource('problem', 'AddproblemController');
+
+    Auth::routes();
 });
-Route::resource('notes', 'NotesController');
+
+
+
+
