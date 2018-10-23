@@ -11,6 +11,10 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class ResearchController extends Controller
 {
+    public function  __construct()
+    {
+        $this->middleware('auth');
+    }
     //displaying everything
     public function research(){
         $problems = Problems::get();

@@ -12,6 +12,11 @@ use phpDocumentor\Reflection\Types\Array_;
 
 class AddProblemController extends Controller
 {
+    public function  __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function categoryfind(){
          $category = Categores::get();
          $category_list = json_decode($category);
