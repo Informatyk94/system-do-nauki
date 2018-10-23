@@ -8,8 +8,8 @@ class PanelController extends Controller
 {
     public function  __construct()
     {
-        //do sprawdzenia czy przejdzie do głównej strony 
-        $this->middleware('auth', ['only' => ['panel','addproblem']]);
+        //do sprawdzenia czy przejdzie do głównej strony
+        $this->middleware('auth', ['except' => 'home']);
     }
     public function panel(){
         return view('panel');

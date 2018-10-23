@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Problems;
 use App\Categores;
+use Session;
 use Illuminate\Support\Facades\Auth;
 use \Request;
 use App\Http\Requests\AddProblemRequest;
@@ -41,6 +42,7 @@ class AddProblemController extends Controller
     public function addproblem(AddProblemRequest $request){
 
         Problems::create($request->all());
+        Session::flash('problem_created', 'Twój wpis został dodany');
         return redirect('panel');
     }
 

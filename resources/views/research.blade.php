@@ -79,7 +79,7 @@
                         '{{$problem->id}}',
                         '{{$problem->title}}',
                         '{{$problem->category}}',
-                        '{{$problem->content_problem}}',
+                        '{{str_limit($problem->content_problem, $limit=30) }}',
                         name = '{{$problem->user->name}}',
                         '{{$problem->id}}'
 

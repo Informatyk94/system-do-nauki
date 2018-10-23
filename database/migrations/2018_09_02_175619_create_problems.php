@@ -18,8 +18,8 @@ class CreateProblems extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->integer('category');
-            $table->string('content_problem');
-            $table->string('content_solution');
+            $table->text('content_problem');
+            $table->text('content_solution');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
 
