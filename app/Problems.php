@@ -15,4 +15,13 @@ class Problems extends Model
         'update_at',
         'created_at'
     ];
+
+    /**
+     *
+     * Wpis ma swojego autora
+     *
+     */
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }

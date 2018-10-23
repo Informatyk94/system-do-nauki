@@ -15,11 +15,14 @@ class CreateProblems extends Migration
     {
         Schema::create('problems', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->integer('category');
             $table->string('content_problem');
             $table->string('content_solution');
             $table->timestamp('created_at')->nullable();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
