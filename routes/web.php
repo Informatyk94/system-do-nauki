@@ -28,6 +28,10 @@ Route::group(['middleware' => ['web']], function(){
     //Route::resource('problem', 'AddproblemController');
 
     Auth::routes();
+
+    Route::get('logout', 'Auth\LoginController@logout', function () {
+        return abort(404);
+    });
 });
 
 

@@ -30,10 +30,13 @@
 <body id="app-layout">
 
 <!- top menu -->
+
+@if(!preg_match('/login|register|reset/',url()->current()))
 <div class="top-menu">
     <a href="#" class="btn btn-danger button_menu" role="button">User</a>
-    <a href="#" class="btn btn-danger button_menu" role="button">Logout</a>
+    <a href="{{ route('logout') }}" class="btn btn-danger button_menu" role="button">Logout</a>
 </div>
+@endif
 <div style="clear:both"></div>
 
 <!-- wrapper -->
