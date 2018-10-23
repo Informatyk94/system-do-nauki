@@ -21,6 +21,8 @@ class CreateProblems extends Migration
             $table->string('content_problem');
             $table->string('content_solution');
             $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+
 
             $table->foreign('user_id')->references('id')->on('users');
         });

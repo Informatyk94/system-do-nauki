@@ -1,4 +1,4 @@
-
+{!! Form::hidden('user_id', 2) !!}
 <div class="form-group">
     {!! Form::label('title',"Tytuł:") !!}
     {!! Form::text('title', null,['class' => 'form-control']) !!}
@@ -17,3 +17,4 @@
     {!! Form::textarea('content_solution', null,['class' => 'form-control']) !!}
 </div>
     {!! Form::submit($buttonText,['class' => 'btn btn-danger']) !!}
+

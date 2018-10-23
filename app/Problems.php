@@ -13,7 +13,8 @@ class Problems extends Model
         'content_problem',
         'content_solution',
         'update_at',
-        'created_at'
+        'created_at',
+        'user_id'
     ];
 
     /**

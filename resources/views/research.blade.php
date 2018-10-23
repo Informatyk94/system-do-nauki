@@ -17,7 +17,8 @@
                     <th>#</th>
                     <th>Tytuł</th>
                     <th>Kategoria</th>
-                    <th>Krótki opis</th>
+                    <th>Opis</th>
+                    <th>Dodał</th>
                 </tr>
 
                 </thead>
@@ -29,6 +30,7 @@
                             <td>@{{ post.title }}</td>
                             <td>@{{ post.category }}</td>
                             <td>@{{ post.content_problem }}</td>
+                            <td>@{{ post.name }}</td>
                             <td><a v-bind:href="post.link">Link</a></td>
                     </tr>
 
@@ -62,6 +64,7 @@
             this.title = title;
             this.category = category;
             this.content_problem = content_problem;
+            this.name = name;
             this.link = "/show/" + id;
         }
     }
@@ -77,6 +80,7 @@
                         '{{$problem->title}}',
                         '{{$problem->category}}',
                         '{{$problem->content_problem}}',
+                        name = '{{$problem->user->name}}',
                         '{{$problem->id}}'
 
                     ),
