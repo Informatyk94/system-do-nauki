@@ -1,9 +1,25 @@
-.title_home {
+.title_home .title {
   text-align: center;
   padding-top: 23px;
   padding-bottom: 35px;
   color: #d90022;
   font-size: 100px; }
+
+.title_home a {
+  text-align: center;
+  color: #d90022; }
+
+.title_home a:link {
+  text-decoration: none;
+  color: #d90022; }
+
+.title_home a:hover {
+  text-decoration: none;
+  color: #d90022; }
+
+.title_home a:active {
+  text-decoration: none;
+  color: #d90022; }
 
 .login_button {
   width: 50%;

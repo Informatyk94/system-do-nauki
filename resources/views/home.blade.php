@@ -1,7 +1,12 @@
 @extends('master')
 
 @section('content')
-    <a href="/panel"><h1  class="title_home">SYSTEM B</h1></a>
+    <div class="title_home">
+        <a href="/panel">
+            <h1  class="title">SYSTEM B</h1>
+        </a>
+    </div>
+
     <div class="container">
             <div class="row">
                 <div class="login_button">

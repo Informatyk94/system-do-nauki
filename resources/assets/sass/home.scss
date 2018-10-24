@@ -1,9 +1,27 @@
 .title_home{
-    text-align: center;
-    padding-top: 23px;
-    padding-bottom: 35px;
-    color: #d90022;
-    font-size: 100px;
+    .title{
+        text-align: center;
+        padding-top: 23px;
+        padding-bottom: 35px;
+        color: #d90022;
+        font-size: 100px;
+    }
+    a{
+        text-align: center;
+        color: #d90022;
+    }
+    a:link{
+        text-decoration: none;
+        color: #d90022;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #d90022;
+    }
+    a:active{
+        text-decoration: none;
+        color: #d90022;
+    }
 }
 
 

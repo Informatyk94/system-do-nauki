@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class PanelController extends Controller
@@ -21,5 +22,10 @@ class PanelController extends Controller
 
     public function home(){
         return view('home');
+    }
+
+
+    public function account(){
+        return view('account');
     }
 }
