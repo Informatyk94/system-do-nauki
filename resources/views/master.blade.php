@@ -31,11 +31,17 @@
 
 <!- top menu -->
 
-@if(!preg_match('/login|register|reset/',url()->current()))
-<div class="top-menu">
-    <a href="#" class="btn btn-danger button_menu" role="button">User</a>
-    <a href="{{ route('logout') }}" class="btn btn-danger button_menu" role="button">Logout</a>
-</div>
+@if(preg_match('/panel|addproblemform|account|show|research/',url()->current()))
+    <div class="top-menu">
+        <a href="#" class="btn btn-danger button_menu" role="button">
+            @if(isset(Auth::user()->name))
+                {{"Zalogowany: " . Auth::user()->name}}
+            @else
+                {{ "Brak zalogowania" }}
+            @endif
+        </a>
+        <a href="{{ route('logout') }}" class="btn btn-danger button_menu" role="button">Wyloguj</a>
+    </div>
 @endif
 <div style="clear:both"></div>
 

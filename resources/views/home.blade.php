@@ -1,23 +1,20 @@
 @extends('master')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+    <a href="/panel"><h1  class="title_home">SYSTEM B</h1></a>
+    <div class="container">
+            <div class="row">
+                <div class="login_button">
+                    <a href="/login" class="btn btn-danger button_menu" role="button">Login</a>
                 </div>
+               <div class="register_button">
+                   <a href="/register" class="btn btn-danger button_menu" role="button">Register</a>
+               </div>
+                <div style="clear: both"></div>
+
+
+
+
             </div>
-        </div>
     </div>
-</div>
 @endsection

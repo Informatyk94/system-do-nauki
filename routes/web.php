@@ -12,8 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
+
 
 
 Route::group(['middleware' => ['web']], function(){
@@ -35,5 +36,7 @@ Route::group(['middleware' => ['web']], function(){
 });
 
 
-
+Route::get('/home', function () {
+    return view('home');
+});
 

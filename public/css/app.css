@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+.title_home {
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 35px;
+  color: #d90022;
+  font-size: 100px; }
+
+a:link {
+  color: white !important; }
+
+.login_button {
+  width: 50%;
+  padding: 40px; }
+  .login_button a {
+    float: right; }
+
+.register_button {
+  width: 50%;
+  padding: 40px; }
+  .register_button a {
+    float: left; }
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); }
