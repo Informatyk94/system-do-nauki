@@ -1,24 +1,46 @@
-a{
-    text-align: center;
-    color: #d90022;
+.link{
+    a{
+        text-align: center;
+        color: #d90022;
+    }
+    a:link{
+        text-decoration: none;
+        color: #d90022;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #d90022;
+    }
+    a:active{
+        text-decoration: none;
+        color: #d90022;
+    }
 }
-a:link{
-    text-decoration: none;
-    color: #d90022;
-}
-a:hover{
-    text-decoration: none;
-    color: #d90022;
-}
-a:active{
-    text-decoration: none;
-    color: #d90022;
-}
+
 .title_research{
     text-align: center;
     padding-top: 23px;
     padding-bottom: 35px;
     color: #d90022;
     font-size: 50px;
+    a{
+        text-align: center;
+        color: #d90022;
+    }
+    a:link{
+        text-decoration: none;
+        color: #d90022;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #d90022;
+    }
+    a:active{
+        text-decoration: none;
+        color: #d90022;
+    }
+    h1{
+        font-size: 50px;
+    }
 }
 

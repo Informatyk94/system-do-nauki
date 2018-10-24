@@ -6,9 +6,6 @@
   color: #d90022;
   font-size: 100px; }
 
-a:link {
-  color: white !important; }
-
 .login_button {
   width: 50%;
   padding: 40px; }
@@ -255,19 +252,19 @@ a, .btn-link {
   .center_img img {
     max-width: 200px; }
 
-a {
+.link a {
   text-align: center;
   color: #d90022; }
 
-a:link {
+.link a:link {
   text-decoration: none;
   color: #d90022; }
 
-a:hover {
+.link a:hover {
   text-decoration: none;
   color: #d90022; }
 
-a:active {
+.link a:active {
   text-decoration: none;
   color: #d90022; }
 
@@ -277,3 +274,27 @@ a:active {
   padding-bottom: 35px;
   color: #d90022;
   font-size: 50px; }
+  .title_research a {
+    text-align: center;
+    color: #d90022; }
+  .title_research a:link {
+    text-decoration: none;
+    color: #d90022; }
+  .title_research a:hover {
+    text-decoration: none;
+    color: #d90022; }
+  .title_research a:active {
+    text-decoration: none;
+    color: #d90022; }
+  .title_research h1 {
+    font-size: 50px; }
+
+.show__category {
+  background-color: white;
+  padding: 10px;
+  margin: 3px; }
+  .show__category span {
+    font-weight: bold; }
+
+.show__buttons {
+  margin-top: 20px; }

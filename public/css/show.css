@@ -1,0 +1,9 @@
+.show__category {
+  background-color: white;
+  padding: 10px;
+  margin: 3px; }
+  .show__category span {
+    font-weight: bold; }
+
+.show__buttons {
+  margin-top: 20px; }

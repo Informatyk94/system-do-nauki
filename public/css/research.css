@@ -1,16 +1,16 @@
-a {
+.link a {
   text-align: center;
   color: #d90022; }
 
-a:link {
+.link a:link {
   text-decoration: none;
   color: #d90022; }
 
-a:hover {
+.link a:hover {
   text-decoration: none;
   color: #d90022; }
 
-a:active {
+.link a:active {
   text-decoration: none;
   color: #d90022; }
 
@@ -20,3 +20,17 @@ a:active {
   padding-bottom: 35px;
   color: #d90022;
   font-size: 50px; }
+  .title_research a {
+    text-align: center;
+    color: #d90022; }
+  .title_research a:link {
+    text-decoration: none;
+    color: #d90022; }
+  .title_research a:hover {
+    text-decoration: none;
+    color: #d90022; }
+  .title_research a:active {
+    text-decoration: none;
+    color: #d90022; }
+  .title_research h1 {
+    font-size: 50px; }

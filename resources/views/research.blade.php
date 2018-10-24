@@ -1,8 +1,11 @@
 @extends('master')
 @section('content')
-    <a href="/panel">
-        <h1 class="title_research">SYSTEM B</h1>
-    </a>
+    <div class="title_research">
+        <a href="/panel">
+            <h1 >SYSTEM B</h1>
+        </a>
+    </div>
+
     <h1>Szukaj</h1>
     <br />
     <form id="app" >
@@ -31,7 +34,7 @@
                             <td>@{{ post.category }}</td>
                             <td>@{{ post.content_problem }}</td>
                             <td>@{{ post.name }}</td>
-                            <td><a v-bind:href="post.link">Link</a></td>
+                            <td class="link"><a v-bind:href="post.link">Link</a></td>
                     </tr>
 
 
